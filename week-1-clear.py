@@ -57,10 +57,9 @@ all_data = pd.DataFrame()
 for filename in tqdm(os.listdir(input_folder)):
     if filename.endswith('.csv'):
         file_path = os.path.join(input_folder, filename)
-        print(file_path)
         df = pd.read_csv(file_path, quotechar='"', dtype=str)
         all_data = pd.concat([all_data, df], ignore_index=True)
 
 all_data.to_csv(output_file, index=False, encoding="utf-8")
 
-print(f"全部版面整合完畢 {output_file}")
+print(f"全部版面整合完畢 {output_file}")  
