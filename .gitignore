@@ -1,3 +1,6 @@
 .qodo
 raw/
-all-boards.csv
+# all-boards.csv
+dict_v1.csv
+delete_v1.csv
+all-boards-init.csv
